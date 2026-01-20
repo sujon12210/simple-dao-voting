@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple DAO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏛️ Decentralized Ballot</h1>
+            <button id="connectBtn">Connect Wallet</button>
+        </header>
+
+        <div class="create-section">
+            <h3>New Proposal</h3>
+            <div class="input-row">
+                <input type="text" id="descInput" placeholder="What should we vote on?">
+                <button id="createBtn" disabled>Submit</button>
+            </div>
+        </div>
+
+        <div class="proposals-list">
+            <h3>Active Proposals</h3>
+            <div id="proposalContainer">
+                <p class="loading">Connect wallet to see proposals...</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
